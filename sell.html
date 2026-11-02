@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sell - CampusConnect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="logo">Campus<span>Connect</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="sell.html">Sell</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="login.html" id="authLink" class="btn small">Login</a>
+    </div>
+  </nav>
+
+  <div class="auth-wrap">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+
+    <form class="auth-box sell-box" id="sellForm">
+      <h2>Sell a product 🛍️</h2>
+      <p class="hint">Details bharo, listing turant live ho jayegi.</p>
+
+      <div class="field">
+        <label>Product ka naam</label>
+        <input type="text" id="pTitle" placeholder="e.g. Engineering Physics Book">
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label>Category</label>
+          <select id="pCategory">
+            <option>Books</option>
+            <option>Electronics</option>
+            <option>Calculators</option>
+            <option>Stationery</option>
+            <option>Cycles</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Price (₹)</label>
+          <input type="number" id="pPrice" placeholder="250" min="0">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label>Condition</label>
+          <select id="pCondition">
+            <option>Like new</option>
+            <option>Good</option>
+            <option>Used</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Meet at (campus mein)</label>
+          <select id="pSpot">
+            <option>Library</option>
+            <option>Canteen</option>
+            <option>Hostel</option>
+            <option>Main Gate</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Description</label>
+        <textarea id="pDesc" rows="3" placeholder="Kitna purana hai, kya kya saath milega..."></textarea>
+      </div>
+
+      <div class="field">
+        <label>Product ki photo (optional)</label>
+        <input type="file" id="pImage" accept="image/*">
+        <img id="preview" class="preview" alt="Preview">
+      </div>
+
+      <p class="msg" id="sellMsg"></p>
+      <button class="btn full" type="submit">Listing post karo</button>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

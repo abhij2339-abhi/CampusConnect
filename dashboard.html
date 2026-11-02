@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - CampusConnect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="logo">Campus<span>Connect</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="sell.html">Sell</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="login.html" id="authLink" class="btn small">Login</a>
+    </div>
+  </nav>
+
+  <section class="section dash">
+    <h2>Hi, <span class="grad" id="dashName">Student</span> 👋</h2>
+
+    <div class="dash-stats">
+      <div class="dstat"><b id="dsListings">0</b><span>Meri listings</span></div>
+      <div class="dstat"><b id="dsReceived">0</b><span>Aayi requests</span></div>
+      <div class="dstat"><b id="dsSent">0</b><span>Meri interests</span></div>
+    </div>
+
+    <h3 class="dash-title">📦 Meri listings</h3>
+    <div id="myListings" class="dash-list"></div>
+
+    <h3 class="dash-title">📩 Mujhe aayi requests</h3>
+    <div id="receivedReqs" class="dash-list"></div>
+
+    <h3 class="dash-title">🛒 Maine jahan interest dikhaya</h3>
+    <div id="sentReqs" class="dash-list"></div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
